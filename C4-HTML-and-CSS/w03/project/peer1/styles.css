@@ -1,0 +1,120 @@
+body{
+    background-color:#a7b2b3;
+    font-family: cursive;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+header {
+    background-color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 10rem;
+    text-align: center;
+}
+
+header > h4{
+    padding-top: 1rem;
+    text-shadow: 1px 1px 2px rgb(179, 141, 214);
+}
+
+@keyframes move{
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(720deg);
+    }
+}
+
+@keyframes slide{
+    0% {
+        transform: translate3d(0,0,0)
+    }
+
+    25% {
+        transform: translate3d(50px,0,0)
+    }
+
+    50% {
+        transform: translate3d(0,0,0)
+    }
+
+    75% {
+        transform: translate3d(-50px,0,0)
+    }
+
+    100% {
+        transform: translate3d(0,0,0)
+    }
+}
+
+header img {
+    width : 35%;
+    height : 25%;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+header img:hover { 
+    animation: move 3s linear;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+}
+
+main{
+    background-color: rgb(220, 238, 237);
+    padding-top: 1rem;
+}
+
+section div {
+    text-align: center;
+    animation: slide 5s linear;
+    animation-iteration-count: infinite;
+}
+
+div h5 {
+    padding-top: 1rem;
+}
+
+article, footer {
+    display: flex;
+}
+
+article{
+    flex: 1;
+    padding-top: 1rem;
+    margin: 1rem;
+}
+
+article div{
+    width: 35%;
+    height: 35%;
+    text-align: center;
+    margin: 1rem;
+}
+
+.art_sec:hover {
+    border-radius: 10%;
+    background-color: rgb(45, 131, 127);
+    transform: translate(5px, 5px);
+}
+
+footer{
+    background-color: aliceblue;
+    text-align: center;
+    padding-top: 0.5rem;
+    margin-bottom: auto;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer .img-fluid {
+    width: 40%;
+}
